@@ -1,4 +1,30 @@
 #summary Function list of 2 overview functions that create the Twphper
 
-=Function List
-More details coming soon...
+=Function details=
+
+=twphpermeta($jquery,$skin)=
+
+This function's purpose is to include the nessesary CSS and Javascript to give the Twphper the awesome look and feel it has. You don't need Javascript, but the Twphper looks ugly with normal browser scrollbars. Place in the <head> of your document. _This function is not required unless you wish to use skins!_
+
+==Arguments:==
+
+===*$jquery* _int(0-2)_===
+This lets you control the usage of Jquery: 0 : load Jquery and Scripts 1 : Don't load Jquery, but use scripts (Good if you already use jquery on your page, don't load it again) 2 : Don't use Jquery or scripts. (If you are using another Javascript liberary or don't want Jquery)
+
+===*$skin* _string_===
+
+This is a string that loads the css file and it's images based on the input string. Twphper will automaticly detect if the skin is present or not.
+
+---
+
+===twphper($twitter,$skin)===
+This function will load your tweets.
+
+==Arguments:==
+
+===*$twitter* _string===
+This is the case sensative Twitter account username that the Twphper will read.
+
+===*$skin* _string_===
+
+*REPEATED:* This is a string that loads the css file and it's images based on the input string. Twphper will automaticly detect if the skin is present or not.
