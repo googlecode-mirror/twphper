@@ -1,0 +1,19 @@
+#summary One-sentence summary of this page.
+#labels Featured,Phase-Design
+
+= Introduction =
+
+Twphper is a PHP program that loads your tweets from your [http://twitter.com Twitter] Account. We also have a skin system that allows you to make your tweets look pretty without any knowledge of css.
+
+== Why Twphper? ==
+
+We find that the Twitter Widget is relatively slow as it uses flash and is very client heavy. While looking for an ability to get tweets and have control over them with any coding We wanted we created Twphper and decided to make it Open Source. So now its easy and with a file include and 2 functions your tweets are on their way!
+
+== Details ==
+*How does Twphper work?*
+
+Twphper is nothing special. It in fact doesn't even use the [http://apiwiki.twitter.com Twitter API]. We desided it would be much more efficient to use cURL. Verbatim this is how Twphper Works:
+* You place the functions on your page that set up the skin and formating for your Twphper
+* The Twitter Username you input in the [http://code.google.com/p/twphper/wiki/Functionlist#twphper($twitter,$skin) twphper()] function is then used to input into cURL at http://twitter.com/$twitterusername
+* From there we scrape the RSS feed from your account
+* We decode the RSS feed and display your tweets
