@@ -15,7 +15,7 @@ This lets you control the usage of Jquery: 0 : load Jquery and Scripts 1 : Don't
 
 This is a string that loads the css file and it's images based on the input string. Twphper will automaticly detect if the skin is present or not.
 
----
+----
 
 ===twphper($twitter,$skin)===
 This function will load your tweets.
