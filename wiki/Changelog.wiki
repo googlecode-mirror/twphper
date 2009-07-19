@@ -21,8 +21,11 @@
 
 == v1.1 ==
 *+* Modified into a class from set of functions
+
 */* Minor Bug fixes
+
 *+* Added Setup Wizard
+
 *+* Added Error Message for CSS skin not found
 
 == v1.0 ==
