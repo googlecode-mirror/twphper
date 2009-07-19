@@ -29,7 +29,11 @@ This enables added the added feature to get the timestamp of the tweet by the ro
 =Method details=
 
 ==meta()==
-
+{{{
+echo '<head><title>Twphper is cool</title>';
+echo $twphper->meta();
+echo '</head>';
+}}}
 This function's purpose is to include the necessary CSS and Javascript to generate the Twphper skin that gives Twphper the awesome look and feel it has. You don't need Javascript, but the Twphper looks ugly with normal browser scrollbars. Place in the <head> of your document. _This function is not required unless you wish to use skins!_
 
 
@@ -37,3 +41,8 @@ This function's purpose is to include the necessary CSS and Javascript to genera
 
 ==create()==
 This method will generate the HTML for your tweets.
+
+{{{
+echo '<body><h3>My Twitter Account</h3>';
+echo $twphper->create();
+}}}
