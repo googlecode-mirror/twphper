@@ -1,0 +1,38 @@
+#summary How to Install your Twphper
+
+= Installation =
+The following will show you how to install a Twphper onto your site
+
+First off [http://twphper.com download] The latest release of Twphper from the website. Extract the .zip into your directory. Upload the "ext" and "skins" directory to the same location your Twphper will be located.
+
+Include the Twphper Class on your page
+{{{
+require_once 'twphper.php';
+}}}
+
+Create a new instance of Your Twphper
+
+{{{
+require "twphper.php"; 	 // including the Twphper Class
+$twitter= 'twphper'; 	 // PUT YOUR TWITTER ACCOUNT USERNAME HERE!!
+$skin =   'default'; 	 // the directory name of the skin
+$jquery=0;				 // load jquery?
+$count=25;				 // how many tweets to generate
+$details=true;			 // if set to true will output date and give link to tweet on double click
+
+$twphper = new twphper($twitter,$skin,$jquery,$count,$details); //create new instance of twphper
+}}}
+
+So that means
+The Twitter account "twphper" will be loaded with the default skin, Jquery will be included into the page, 25 tweets will be displayed, and details will be turned on.
+
+Call Javascript and Skin inside your HTML HEAD section
+{{{
+echo $twphper->meta();
+}}}
+
+And finally create your Twphper in the place you want your Twphper to appear.
+
+{{{
+echo $twphper->create();
+}}}
