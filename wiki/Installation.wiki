@@ -1,4 +1,5 @@
 #summary How to Install your Twphper
+#labels Featured,Phase-Implementation,Phase-Deploy
 
 = Installation =
 The following will show you how to install a Twphper onto your site
