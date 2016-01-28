@@ -1,0 +1,29 @@
+# v1.2 #
+**/** Enhanced Class twphper()
+
+**-** Removed unnecessarily method: set()
+
+**+** Upgraded Twphper to Twitter API
+
+**+** Added ability to set amount of tweets fetched: $count on class twphper
+
+**+** Added timestamp on hover and Double Click to view Tweet at Twitter.com: $details on class twphper
+
+**/** Modified Setup.php to new settings
+
+**+** Added Error Message for API LIMIT
+
+**+** Added Error Message for Invalid user
+
+
+## v1.1 ##
+**+** Modified into a class from set of functions
+
+**/** Minor Bug fixes
+
+**+** Added Setup Wizard
+
+**+** Added Error Message for CSS skin not found
+
+## v1.0 ##
+_Initial launch_

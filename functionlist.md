@@ -1,0 +1,53 @@
+# Documentation Overview #
+Current with Version 1.2
+# Class Details #
+Create a new instance of Twphper with
+```
+$twphper = new twphper($twitter,$skin,$jquery,$count,$details);
+```
+
+## twphper($twitter,$skin,$jquery,$count,$details) ##
+### **$twitter** _string_ ###
+This is the case sensitive Twitter account user-name that the Twphper will fetch your tweets from.
+
+
+### **$jquery** _int(0-2)_ ###
+This lets you control the usage of Jquery: 0 : load Jquery and Scripts 1 : Don't load Jquery, but use scripts (Good if you already use jquery on your page, don't load it again) 2 : Don't use Jquery or scripts. (If you are using another Javascript library or don't want Jquery)
+
+### **$skin** _string_ ###
+
+This is a string that loads the css file and it's images based on the input string. Twphper will automatically detect if the skin is present or not.
+
+### **$count** _int(1-200) default 20 (optional)_ ###
+
+How many tweets are to be retrieved. Minimum of 1 tweet must be returned and Maximum of 20 tweets may be returned.
+
+### **$count** _string(true/false) default true (optional)_ ###
+
+This enables added the added feature to get the timestamp of the tweet by the rolling mouse over the tweet AND if Jquery is enabled allows the user to double click a Tweet to view the tweet at http://twitter.com
+# Method details #
+
+## meta() ##
+```
+echo '<head><title>Twphper is cool</title>';
+echo $twphper->meta();
+echo '</head>';
+```
+This function's purpose is to include the necessary CSS and Javascript to generate the Twphper skin that gives Twphper the awesome look and feel it has. You don't need Javascript, but the Twphper looks ugly with normal browser scrollbars. Place in the 
+
+&lt;head&gt;
+
+ of your document. _This function is not required unless you wish to use skins!_
+
+
+
+---
+
+
+## create() ##
+This method will generate the HTML for your tweets.
+
+```
+echo '<body><h3>My Twitter Account</h3>';
+echo $twphper->create();
+```

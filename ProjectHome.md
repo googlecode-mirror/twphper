@@ -1,0 +1,1 @@
+This program is an open source PHP program that will get your 20 latest Tweets and display them on your website. We have a skin-able interface to give it that twitter look.
